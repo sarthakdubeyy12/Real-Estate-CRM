@@ -4,6 +4,10 @@ import connectDB from "../src/config/db.js";
 import { connectRedis } from "../src/config/redis.js";
 import authRoutes from "../src/routes/authRoutes.js";
 import clientRoutes from "./routes/clientRoutes.js";
+import propertyRoutes from "./routes/propertyRoutes.js";
+import leadRoutes from "./routes/leadRoutes.js";
+
+
 
 dotenv.config();
 const app = express();
@@ -24,4 +28,6 @@ app.listen(PORT, async () => {
 
   app.use("/api/auth", authRoutes);
   app.use("/api/clients", clientRoutes);
+  app.use("/api/properties", propertyRoutes);
+  app.use("/api/leads", leadRoutes);
 });
