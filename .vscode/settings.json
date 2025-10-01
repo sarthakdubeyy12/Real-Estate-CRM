@@ -1,3 +1,5 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "editor.accessibilityPageSize": 500,
+    "editor.fontSize": 15
 }
