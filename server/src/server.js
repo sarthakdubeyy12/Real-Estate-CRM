@@ -6,6 +6,7 @@ import authRoutes from "../src/routes/authRoutes.js";
 import clientRoutes from "./routes/clientRoutes.js";
 import propertyRoutes from "./routes/propertyRoutes.js";
 import leadRoutes from "./routes/leadRoutes.js";
+import taskRoutes from "./routes/taskRoutes.js";
 
 
 
@@ -30,4 +31,5 @@ app.listen(PORT, async () => {
   app.use("/api/clients", clientRoutes);
   app.use("/api/properties", propertyRoutes);
   app.use("/api/leads", leadRoutes);
+  app.use("/api/tasks", taskRoutes);
 });
